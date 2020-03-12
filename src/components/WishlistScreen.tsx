@@ -8,8 +8,8 @@ export default class WishlistScreen extends Component {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Wishlist Screen</Text>
             <Button
-            title="Go to Home"
-            onPress={() => this.props.navigation.navigate('Home')}/>
+                title="Go to Home"
+                onPress={() => this.props.navigation.navigate('Home')}/>
         </View>
         )
     }

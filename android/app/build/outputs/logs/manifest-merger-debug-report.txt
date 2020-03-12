@@ -1,16 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-vector-icons] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
+MERGED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
 MERGED from [:react-native-community_masked-view] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-gesture-handler] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f5fdfaef256e59e0aab0cae1866561ae/AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/85da8d5916e5cf32584cb5fd166d18d4/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/3af98bc5f2fded68790d22c36208cd4e/AndroidManifest.xml:17:1-24:12
@@ -23,21 +24,35 @@ MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/nesbittr/.gradle/ca
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/0bfb75f0fea43ed9b127ae217e4d687b/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/d2a90a853725ae42bd659d52c3acd0dd/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1236748392bf8c74d0fe2d46dd0440e1/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b0d3b2a7e70d3546474cdfd0bab35c2d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1e6002074a96e1f9df0edbe5d260f9a9/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/df50f296ea1af469b282ef21576959d1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36b3548724abb7514b6dccce81000a10/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/76e38fec5007014f8173f6ea9417891c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/d2fc101042f7235ab539239df050c90e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/54aae9423e140b13f1073295c575e271/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bd43fe132ac68068234b70c9f94df6b0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f99245084e545cbf18ddd09f438bc50a/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7dfc1ae2f1498fd40e2e8f38bd193c72/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.2.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f601f2d6c8f90bd695603f4ede4104c5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/9466b88d446b0fb72550eec15314c62e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/503b7626124ffa077f14584e44a61bd8/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36254fc5625ead5d723a1870f495c01e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a17541da2fa58a33f473dc2e8cfc8479/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.media:media:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/42739fcdc1af3891c3a466e1456669e9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1a271e4bd4ca269e49eca33acb05e394/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/c95462b9a5e74f3fe3cc3f2d7b70eea9/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bb61fc0e43deb8a2adc13c65b71979ba/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/0d3d75103be7bbb22f4e1f609c3ae964/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b16836741cb5b246fec34d99a00a1600/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/ef981c945b512e9aa5a42e2bcb13ad4e/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7256ff03dd0b2d25d464d73a7341b09b/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/fe41fdf5c9524e392696335e6c4f1fff/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/dbcb67d6967831a3b7e5350af7ee15a6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b0d3b2a7e70d3546474cdfd0bab35c2d/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/50db1f70025dd667c90bba2e10c6c281/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/c41df4f990cffd9c78134053d848ef34/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1bff34bf6ae01a0e050b94d267cfa7ab/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a30e8b01d22c49d07459ddc8d22e3704/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/8d4a898e4c7902a672cb9e80d46b7e0f/AndroidManifest.xml:17:1-27:12
@@ -45,11 +60,15 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/nes
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/334fa78337909dbd55e81a4144491fb1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f231522ea60c9bcf8c21175e42ea8643/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7108c3468ebc39331b0625bfa01b73e8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7ae892168e6ca5c380e2e90b5aa64391/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/0247bd9260c4e9d52ce9ddd882043385/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/eeae880952f03fed255fc914183f0439/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/66cb30a274840f3c0232169417f7144d/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/59dabce2c64544a07daa4c6bb898fc6c/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/24ec7e8671aa43d3833ecf7ea391769b/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2c1d24040545484062bf3b23a17e4c19/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/6c9d868e3f3826255ccdcc70f41aa666/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a17541da2fa58a33f473dc2e8cfc8479/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -60,13 +79,13 @@ INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/Andr
 		INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
 		INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:1-30:12
 		INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -74,16 +93,48 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:5:5-65
+MERGED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+MERGED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:6:5-70
+	android:name
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:6:5-24:19
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:10:5-28:19
+MERGED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:10:5-28:19
+MERGED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:10:5-28:19
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f5fdfaef256e59e0aab0cae1866561ae/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f5fdfaef256e59e0aab0cae1866561ae/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/3af98bc5f2fded68790d22c36208cd4e/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/3af98bc5f2fded68790d22c36208cd4e/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1236748392bf8c74d0fe2d46dd0440e1/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1236748392bf8c74d0fe2d46dd0440e1/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1e6002074a96e1f9df0edbe5d260f9a9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1e6002074a96e1f9df0edbe5d260f9a9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36b3548724abb7514b6dccce81000a10/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36b3548724abb7514b6dccce81000a10/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/76e38fec5007014f8173f6ea9417891c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/76e38fec5007014f8173f6ea9417891c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/54aae9423e140b13f1073295c575e271/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/54aae9423e140b13f1073295c575e271/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bd43fe132ac68068234b70c9f94df6b0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bd43fe132ac68068234b70c9f94df6b0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/8d4a898e4c7902a672cb9e80d46b7e0f/AndroidManifest.xml:24:5-25:19
@@ -91,61 +142,61 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nesb
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:8:7-39
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:12:7-39
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:12:7-39
 	tools:ignore
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:10:7-52
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:14:7-52
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:14:7-52
 	tools:targetApi
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:9:7-41
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:13:7-41
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:13:7-41
 	android:allowBackup
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:11:7-34
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:15:7-34
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:15:7-34
 	android:theme
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:12:7-38
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:16:7-38
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:16:7-38
 	android:usesCleartextTraffic
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:7:7-38
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:11:7-38
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:11:7-38
 activity#com.kickchek.MainActivity
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:17:7-26:18
 	android:label
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:19:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:21:9-51
 	android:configChanges
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:20:9-79
 	android:name
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:18:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:22:9-25:25
 action#android.intent.action.MAIN
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:23:13-65
 	android:name
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:23:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:24:13-73
 	android:name
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:24:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:27:7-84
 	android:name
-		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml:27:17-81
 uses-sdk
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-vector-icons] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_masked-view] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -154,6 +205,8 @@ MERGED from [:react-native-safe-area-context] /Users/nesbittr/Desktop/mobile/kic
 MERGED from [:react-native-safe-area-context] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f5fdfaef256e59e0aab0cae1866561ae/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f5fdfaef256e59e0aab0cae1866561ae/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/85da8d5916e5cf32584cb5fd166d18d4/AndroidManifest.xml:7:5-9:41
@@ -178,18 +231,40 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/nesbittr/.grad
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/d2a90a853725ae42bd659d52c3acd0dd/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1236748392bf8c74d0fe2d46dd0440e1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1236748392bf8c74d0fe2d46dd0440e1/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b0d3b2a7e70d3546474cdfd0bab35c2d/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b0d3b2a7e70d3546474cdfd0bab35c2d/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1e6002074a96e1f9df0edbe5d260f9a9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1e6002074a96e1f9df0edbe5d260f9a9/AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/df50f296ea1af469b282ef21576959d1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/df50f296ea1af469b282ef21576959d1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36b3548724abb7514b6dccce81000a10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36b3548724abb7514b6dccce81000a10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/76e38fec5007014f8173f6ea9417891c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/76e38fec5007014f8173f6ea9417891c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/d2fc101042f7235ab539239df050c90e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/d2fc101042f7235ab539239df050c90e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/54aae9423e140b13f1073295c575e271/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/54aae9423e140b13f1073295c575e271/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bd43fe132ac68068234b70c9f94df6b0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bd43fe132ac68068234b70c9f94df6b0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f99245084e545cbf18ddd09f438bc50a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f99245084e545cbf18ddd09f438bc50a/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7dfc1ae2f1498fd40e2e8f38bd193c72/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7dfc1ae2f1498fd40e2e8f38bd193c72/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f601f2d6c8f90bd695603f4ede4104c5/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f601f2d6c8f90bd695603f4ede4104c5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/9466b88d446b0fb72550eec15314c62e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/9466b88d446b0fb72550eec15314c62e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/503b7626124ffa077f14584e44a61bd8/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/503b7626124ffa077f14584e44a61bd8/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36254fc5625ead5d723a1870f495c01e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/36254fc5625ead5d723a1870f495c01e/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a17541da2fa58a33f473dc2e8cfc8479/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a17541da2fa58a33f473dc2e8cfc8479/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.media:media:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/42739fcdc1af3891c3a466e1456669e9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/42739fcdc1af3891c3a466e1456669e9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1a271e4bd4ca269e49eca33acb05e394/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1a271e4bd4ca269e49eca33acb05e394/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/c95462b9a5e74f3fe3cc3f2d7b70eea9/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/c95462b9a5e74f3fe3cc3f2d7b70eea9/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bb61fc0e43deb8a2adc13c65b71979ba/AndroidManifest.xml:20:5-44
@@ -200,14 +275,20 @@ MERGED from [androidx.loader:loader:1.0.0] /Users/nesbittr/.gradle/caches/transf
 MERGED from [androidx.loader:loader:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b16836741cb5b246fec34d99a00a1600/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/ef981c945b512e9aa5a42e2bcb13ad4e/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/ef981c945b512e9aa5a42e2bcb13ad4e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7256ff03dd0b2d25d464d73a7341b09b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7256ff03dd0b2d25d464d73a7341b09b/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/fe41fdf5c9524e392696335e6c4f1fff/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/fe41fdf5c9524e392696335e6c4f1fff/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/dbcb67d6967831a3b7e5350af7ee15a6/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/dbcb67d6967831a3b7e5350af7ee15a6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b0d3b2a7e70d3546474cdfd0bab35c2d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/b0d3b2a7e70d3546474cdfd0bab35c2d/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/50db1f70025dd667c90bba2e10c6c281/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/50db1f70025dd667c90bba2e10c6c281/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/c41df4f990cffd9c78134053d848ef34/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/c41df4f990cffd9c78134053d848ef34/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1bff34bf6ae01a0e050b94d267cfa7ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1bff34bf6ae01a0e050b94d267cfa7ab/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a30e8b01d22c49d07459ddc8d22e3704/AndroidManifest.xml:20:5-44
@@ -222,6 +303,12 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nesbittr/.gradle/c
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/f231522ea60c9bcf8c21175e42ea8643/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7108c3468ebc39331b0625bfa01b73e8/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7108c3468ebc39331b0625bfa01b73e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7ae892168e6ca5c380e2e90b5aa64391/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/7ae892168e6ca5c380e2e90b5aa64391/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/0247bd9260c4e9d52ce9ddd882043385/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/0247bd9260c4e9d52ce9ddd882043385/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/eeae880952f03fed255fc914183f0439/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/eeae880952f03fed255fc914183f0439/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/66cb30a274840f3c0232169417f7144d/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/66cb30a274840f3c0232169417f7144d/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/59dabce2c64544a07daa4c6bb898fc6c/AndroidManifest.xml:20:5-22:41
@@ -232,6 +319,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/nesbittr/.
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2c1d24040545484062bf3b23a17e4c19/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/6c9d868e3f3826255ccdcc70f41aa666/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/6c9d868e3f3826255ccdcc70f41aa666/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a17541da2fa58a33f473dc2e8cfc8479/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a17541da2fa58a33f473dc2e8cfc8479/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -244,3 +333,29 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from /Users/nesbittr/Desktop/mobile/kickchek/android/app/src/debug/AndroidManifest.xml:5:22-75
+uses-feature#android.hardware.camera
+ADDED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/nesbittr/Desktop/mobile/kickchek/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/765c9d9fa376d0a78d567a56d66bf716/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/nesbittr/.gradle/caches/transforms-2/files-2.1/2a021551215689a12c63c25775693ef9/AndroidManifest.xml:24:13-58

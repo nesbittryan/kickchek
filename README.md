@@ -19,4 +19,6 @@ Then run the following commands.
 
 ```react-native link react-native-vector-icons```
 
+```npm install react-native-camera --save```
+
 ```yarn react-native run-android```

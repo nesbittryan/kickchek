@@ -4,7 +4,7 @@
             "outputFile": "/Users/nesbittr/Desktop/mobile/kickchek/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/a495745a92f8613ecff4853da56b5944/res/values-v16/values-v16.xml",
+                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bc04a7c4dcf00708ec40af0ed827d567/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/1e7a0586615854af0e054700d7ea771a/res/values-v16/values-v16.xml",
+                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/32323248c41e7dce988ff7b9da33f7e0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

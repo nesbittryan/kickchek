@@ -1,15 +1,26 @@
 import React from 'react';
-import { View } from 'react-native';
-import { Input, Button, Text } from 'react-native-elements';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
+
+import HomeScreen from './components/HomeScreen';
+import WishlistScreen from './components/WishlistScreen';
 
 export default class App extends React.Component {
 
   render() {
     return(
-      <View>
-        <Text>This is text</Text>
-        <Button title="This is a button"></Button>
-      </View>
+      <AppContainer></AppContainer>
     );
   }
 }
+
+
+const AppNavigator = createSwitchNavigator({
+    Home: {
+      screen: HomeScreen
+    },
+    Wishlist: {
+      screen: WishlistScreen
+    }
+});
+  
+const AppContainer = createAppContainer(AppNavigator);

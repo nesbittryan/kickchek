@@ -30,5 +30,5 @@ export default class Homescreen extends Component {
           const data = await this.camera.takePictureAsync(options);
           console.log(data.uri);
         }
-      };
+    };
 }

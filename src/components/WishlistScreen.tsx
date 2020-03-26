@@ -3,6 +3,7 @@ import { View, FlatList } from 'react-native';
 import { Button, Text } from 'react-native-elements';
 import { getData, storeData } from '../AsyncStorage'
 import Shoe from '../data/Shoe';
+import NavigationBar from './NavigationBar';
 
 interface State {
     wishlist: Shoe[]
@@ -10,7 +11,7 @@ interface State {
 
 const wishlist_key: string = "wishlist"
 
-export default class WishlistScreen extends Component {
+export default class WishlistScreen extends Component<{ navigation: any }> {
  
     readonly state: State = {
         wishlist: new Array()
@@ -43,17 +44,16 @@ export default class WishlistScreen extends Component {
         return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Wishlist Screen</Text>
-            <Button
-                title="Snap A Pic!"
-                onPress={() => this.props.navigation.navigate('Home')}/>
-            
             <FlatList 
                 onRefresh={ () => this.fetchData() }
                 refreshing={ false }
                 data={this.state.wishlist}
                 renderItem={({item}) =>
                     <Text>{item.name}</Text>
-                }/>
+                }
+            />
+            
+            <NavigationBar navigation={this.props.navigation} screen='Wishlist'/>
         </View>
         )
     }

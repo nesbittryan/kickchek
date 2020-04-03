@@ -8,6 +8,7 @@ import ProfileData from '../data/ProfileData';
 interface State {
     address: string
     name: string
+    numShoes: number
     shoeSize: string
 }
 
@@ -18,6 +19,7 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
     readonly state: State = {
         address: '',
         name: '',
+        numShoes: 0,
         shoeSize: ''
     }
 

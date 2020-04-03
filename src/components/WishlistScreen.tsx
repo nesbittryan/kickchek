@@ -4,6 +4,7 @@ import { Button, Text } from 'react-native-elements';
 import { getData, storeData } from '../AsyncStorage'
 import Shoe from '../data/Shoe';
 import NavigationBar from './NavigationBar';
+import ShoeRow from './ShoeRow';
 
 interface State {
     wishlist: Shoe[]
@@ -21,7 +22,8 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
         super(props)
         let i = new Array
         let s = new Shoe
-        s.name = "Nike Aventadors"
+        s.brand = "Nike"
+        s.model = "Aventadors"
         i.push(s)
         storeData(wishlist_key, JSON.stringify(i))
         this.fetchData = this.fetchData.bind(this)
@@ -42,17 +44,18 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
 
     render() {
         return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Wishlist Screen</Text>
-            <FlatList 
-                onRefresh={ () => this.fetchData() }
-                refreshing={ false }
-                data={this.state.wishlist}
-                renderItem={({item}) =>
-                    <Text>{item.name}</Text>
-                }
-            />
-            
+        <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch' }}>
+            <Text style={{fontSize:28, alignSelf:'center'}}>Wishlist</Text>
+            <View style={{ alignSelf:'center', backgroundColor:'#EFEFEF' ,borderColor:'#000', borderWidth:1, height:'87%', width:'95%'}}>
+                <FlatList 
+                    onRefresh={ () => this.fetchData() }
+                    refreshing={ false }
+                    data={this.state.wishlist}
+                    renderItem={({item}) =>
+                        <ShoeRow shoe={item}></ShoeRow>
+                    }
+                />
+            </View>
             <NavigationBar navigation={this.props.navigation} screen='Wishlist'/>
         </View>
         )

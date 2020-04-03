@@ -7,19 +7,17 @@ import NavigationBar from './NavigationBar';
 export default class Homescreen extends Component<{ navigation: any }> {
     render() {
         return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View style={{ justifyContent:'flex-start', height:'100%' }}>
             <RNCamera 
                 ref={ref => { this.camera = ref; }}
                 style={{
-                    flex: 1,
                     width: '100%',
+                    height: '85%'
                 }}/>
-            <Text>Home Screen</Text>
-            
+    
             <Button 
-                title="SNAP Picture"
+                title='Take Picture'
                 onPress={this.takePicture.bind(this)}/>
-                
             <NavigationBar navigation={this.props.navigation} screen='Home'/>
         </View>
         )

@@ -5,16 +5,17 @@ import { getData, storeData } from '../AsyncStorage'
 import Shoe from '../data/Shoe';
 import NavigationBar from './NavigationBar';
 import ShoeRow from './ShoeRow';
+import { wishlist_key, shoes_collected_key } from '../data/StorageKeys';
 
 interface State {
+    numShoes: number
     wishlist: Shoe[]
 }
-
-const wishlist_key: string = "wishlist"
 
 export default class WishlistScreen extends Component<{ navigation: any }> {
  
     readonly state: State = {
+        numShoes: 0,
         wishlist: new Array()
     }
 
@@ -29,6 +30,7 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
         this.fetchData = this.fetchData.bind(this)
     }
 
+
     componentDidMount() {
         this.fetchData();
     }
@@ -40,6 +42,9 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
                 this.setState({ wishlist: JSON.parse(data) })
             }
         })
+
+        this.setState({ numShoes: this.state.wishlist.length })
+        storeData(shoes_collected_key, JSON.stringify(this.state.numShoes))
     }
 
     render() {

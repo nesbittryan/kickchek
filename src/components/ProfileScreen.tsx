@@ -4,6 +4,8 @@ import { Button, Text, Input } from 'react-native-elements';
 import { getData, storeData } from '../AsyncStorage'
 import NavigationBar from './NavigationBar';
 import ProfileData from '../data/ProfileData';
+import { profile_key, shoes_collected_key } from '../data/StorageKeys';
+import BadgeHolder from './Badges/BadgeHolder';
 
 interface State {
     address: string
@@ -11,8 +13,6 @@ interface State {
     numShoes: number
     shoeSize: string
 }
-
-const profile_key: string = "profile"
 
 export default class ProfileScreen extends Component<{ navigation: any }> {
     
@@ -41,6 +41,14 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
                 this.setState({ name: d.name, address: d.address, shoeSize: d.shoeSize })
             }
         })
+
+        getData(shoes_collected_key)
+        .then((data: any) => {
+            if (data != null) {
+                let d = JSON.parse(data)
+                this.setState({ numShoes: d })
+            }
+        })
     }
 
     saveProfile() {
@@ -62,6 +70,8 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
                 <Input value={this.state.name} label="Name" onChangeText={ (t) => this.setState({name: t})}></Input>
                 <Input value={this.state.shoeSize} label="ShoeSize" onChangeText={ (t) => this.setState({shoeSize: t})}></Input>
                 <Button containerStyle={{marginTop:20, marginHorizontal:7}} title="Save Profile Info" onPress={() => this.saveProfile()}></Button>
+
+                <BadgeHolder numShoes={this.state.numShoes}></BadgeHolder>
             </View>
             <NavigationBar navigation={this.props.navigation} screen='Profile'/>
         </View>

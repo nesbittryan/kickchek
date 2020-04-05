@@ -24,12 +24,12 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
         let i = new Array
         let s = new Shoe
         s.brand = "Nike"
+        s.colors = ['red',  'white', 'black']
         s.model = "Aventadors"
         i.push(s)
         storeData(wishlist_key, JSON.stringify(i))
         this.fetchData = this.fetchData.bind(this)
     }
-
 
     componentDidMount() {
         this.fetchData();
@@ -39,20 +39,20 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
         getData(wishlist_key)
         .then((data: any) => {
             if (data != null) {
-                this.setState({ wishlist: JSON.parse(data) })
+                let l = JSON.parse(data)
+                this.setState({ wishlist: l, numShoes: l.length})
+                storeData(shoes_collected_key, JSON.stringify(l.length))
             }
         })
-
-        this.setState({ numShoes: this.state.wishlist.length })
-        storeData(shoes_collected_key, JSON.stringify(this.state.numShoes))
     }
 
     render() {
         return (
         <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch' }}>
             <Text style={{fontSize:28, alignSelf:'center'}}>Wishlist</Text>
-            <View style={{ alignSelf:'center', backgroundColor:'#EFEFEF' ,borderColor:'#000', borderWidth:1, height:'87%', width:'95%'}}>
+            <View style={{ alignSelf:'center', backgroundColor:'#EFEFEF', borderColor:'#000', borderWidth:1, height:'87%', width:'95%'}}>
                 <FlatList 
+                    style={{margin:5}}
                     onRefresh={ () => this.fetchData() }
                     refreshing={ false }
                     data={this.state.wishlist}

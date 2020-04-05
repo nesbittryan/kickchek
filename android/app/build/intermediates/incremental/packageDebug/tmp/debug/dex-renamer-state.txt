@@ -1,4 +1,4 @@
-#Thu Mar 26 14:44:42 EDT 2020
+#Sun Apr 05 12:44:47 EDT 2020
 base.0=/Users/nesbittr/Desktop/mobile/kickchek/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

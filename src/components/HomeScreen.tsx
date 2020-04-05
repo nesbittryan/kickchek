@@ -25,9 +25,9 @@ export default class Homescreen extends Component<{ navigation: any }> {
 
     takePicture = async() => {
         if (this.camera) {
-          const options = { quality: 0.5, base64: true };
+          const options = { quality: 0.5, base64: true, doNotSave: true};
           const data = await this.camera.takePictureAsync(options);
-          console.log(data.uri);
+          this.props.navigation.navigate('Edit',  { photo: data.base64 })
         }
     };
 }

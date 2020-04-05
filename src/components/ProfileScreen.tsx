@@ -46,6 +46,7 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
         .then((data: any) => {
             if (data != null) {
                 let d = JSON.parse(data)
+                console.log(d)
                 this.setState({ numShoes: d })
             }
         })

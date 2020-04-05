@@ -4,6 +4,7 @@ import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './components/HomeScreen';
 import ProfileScreen from './components/ProfileScreen';
 import WishlistScreen from './components/WishlistScreen';
+import EditPhotoScreen from './components/EditPhotoScreen';
 
 export default class App extends React.Component {
 
@@ -14,11 +15,23 @@ export default class App extends React.Component {
   }
 }
 
-
-const AppNavigator = createSwitchNavigator({
-    Home: {
+const PhotoNavigator = createSwitchNavigator(
+  {
+    Camera: {
       screen: HomeScreen
     },
+    Edit: {
+      screen: EditPhotoScreen
+    }
+  },
+  {
+    initialRouteName: 'Camera'
+  }
+)
+
+
+const AppNavigator = createSwitchNavigator({
+    Home: PhotoNavigator,
     Profile: {
       screen: ProfileScreen
     },

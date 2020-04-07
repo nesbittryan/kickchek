@@ -13,10 +13,6 @@ const theme =  {
   colors: {
     primary: Colors.primary_fg,
     secondary: Colors.accent_fg,
-    font: Colors.font_fg,
-    background: Colors.primary_bg,
-    secondary_background: Colors.accent_bg,
-    font_background: Colors.font_bg
   }
 }
 

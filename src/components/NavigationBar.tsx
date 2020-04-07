@@ -11,7 +11,7 @@ export default class NavigationBar extends Component<{ navigation: any, screen: 
     
     render() {
         return (
-        <View style={{ position:'absolute', bottom:0, backgroundColor: Colors.accent_bg, width:'100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', alignSelf: 'center' }}>
+        <View style={{ position:'absolute', bottom:0, backgroundColor: Colors.accent_bg, width:'100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', alignSelf: 'center' }}>
  
             <NavigationTab onPress={() => { this.props.navigation.navigate("Wishlist") }} label="Wishlist" icon="list" selected={this.props.screen == "Wishlist"}/>
 

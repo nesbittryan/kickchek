@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { Button, Text } from 'react-native-elements';
+import { Icon } from 'react-native-elements';
 import { RNCamera } from 'react-native-camera';
 import NavigationBar from './NavigationBar';
+import { Colors } from '../Colors';
 
 export default class Homescreen extends Component<{ navigation: any }> {
     render() {
         return (
-        <View style={{ justifyContent:'flex-start', height:'100%' }}>
-            <RNCamera 
-                ref={ref => { this.camera = ref; }}
-                style={{
-                    width: '100%',
-                    height: '85%'
-                }}/>
-    
-            <Button 
-                title='Take Picture'
-                onPress={this.takePicture.bind(this)}/>
+        <View style={{ justifyContent:'center', height:'100%', alignItems:'center' }}>
+            <RNCamera ref={ref => { this.camera = ref; }} style={{ width: '100%', height: '100%'}}/>
+            
+            <Icon size={30} name="add" reverse raised color={Colors.font_bg} containerStyle={{ position:'absolute', bottom:65,}} onPress={this.takePicture.bind(this)} />
+                
             <NavigationBar navigation={this.props.navigation} screen='Home'/>
         </View>
         )

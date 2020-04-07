@@ -3,15 +3,16 @@ import { View, FlatList } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
 import { getData, storeData } from '../../AsyncStorage'
 import BadgeComponent from './BadgeComponent';
+import { Colors } from '../../Colors';
 
 export default class BadgeHolder extends Component<{ numShoes: number }> {
 
     render() {
         return (
             <View style={{ alignSelf:'stretch', alignItems:'stretch', margin:5}}>
-                <Text style={{ fontSize:18, alignSelf:'center' }}>Badges</Text>
+                <Text style={{ fontSize:18, alignSelf:'center', color:Colors.font_bg }}>Badges</Text>
                 
-                <View style={{ flexWrap:'wrap', alignContent:'stretch', height:'70%'}}>
+                <View style={{ flexWrap:'wrap', alignContent:'stretch', height:'75%'}}>
                     <BadgeComponent name="Shoe-b" desc="Collected your first shoe" collected={this.props.numShoes > 0}></BadgeComponent>
                     <BadgeComponent name="Grower" desc="Your wishlist is expanding" collected={this.props.numShoes >= 5}></BadgeComponent>
                     <BadgeComponent name="Dix" desc="10 is a good start, you always remember your first 10." collected={this.props.numShoes >= 10}></BadgeComponent>

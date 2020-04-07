@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
-import { Button, Text, Input } from 'react-native-elements';
+import { Button, Text, Input, Icon } from 'react-native-elements';
 import { getData, storeData } from '../AsyncStorage'
 import NavigationBar from './NavigationBar';
 import ProfileData from '../data/ProfileData';
 import { profile_key, shoes_collected_key } from '../data/StorageKeys';
 import BadgeHolder from './Badges/BadgeHolder';
+import { Colors } from '../Colors';
 
 interface State {
     address: string
@@ -46,7 +47,6 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
         .then((data: any) => {
             if (data != null) {
                 let d = JSON.parse(data)
-                console.log(d)
                 this.setState({ numShoes: d })
             }
         })
@@ -64,16 +64,17 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
     
     render() {
         return (
-        <View style={{ justifyContent:'flex-start', height:'100%' }}>
-            <Text style={{fontSize:28, alignSelf:'center'}}>Profile</Text>
-            <View style={{ alignSelf:'center', backgroundColor:'#EFEFEF' ,borderColor:'#000', borderWidth:1, height:'87%', width:'95%'}}>
+            <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
+            <Text style={{padding:10,fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Profile</Text>
+
+            <View style={{ alignSelf:'stretch', backgroundColor: Colors.accent_bg, margin:5, maxHeight:'81%'}}>
                 <Input value={this.state.address} label="Address" onChangeText={ (t) => this.setState({address: t})}></Input>
                 <Input value={this.state.name} label="Name" onChangeText={ (t) => this.setState({name: t})}></Input>
-                <Input value={this.state.shoeSize} label="ShoeSize" onChangeText={ (t) => this.setState({shoeSize: t})}></Input>
-                <Button containerStyle={{marginTop:20, marginHorizontal:7}} title="Save Profile Info" onPress={() => this.saveProfile()}></Button>
-
+                <Input value={this.state.shoeSize} label="Shoe Size" onChangeText={ (t) => this.setState({shoeSize: t})}></Input>
+                <Icon size={30} name="save" reverse raised color={Colors.font_bg} containerStyle={{ position:'absolute', bottom:5, right:5}} onPress={() => this.saveProfile()} />
                 <BadgeHolder numShoes={this.state.numShoes}></BadgeHolder>
             </View>
+
             <NavigationBar navigation={this.props.navigation} screen='Profile'/>
         </View>
         )

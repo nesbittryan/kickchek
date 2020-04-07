@@ -6,6 +6,7 @@ import Shoe from '../data/Shoe';
 import NavigationBar from './NavigationBar';
 import ShoeRow from './ShoeRow';
 import { wishlist_key, shoes_collected_key } from '../data/StorageKeys';
+import { Colors } from '../Colors';
 
 interface State {
     numShoes: number
@@ -48,19 +49,19 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
 
     render() {
         return (
-        <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch' }}>
-            <Text style={{fontSize:28, alignSelf:'center'}}>Wishlist</Text>
-            <View style={{ alignSelf:'center', backgroundColor:'#EFEFEF', borderColor:'#000', borderWidth:1, height:'87%', width:'95%'}}>
-                <FlatList 
-                    style={{margin:5}}
-                    onRefresh={ () => this.fetchData() }
-                    refreshing={ false }
-                    data={this.state.wishlist}
-                    renderItem={({item}) =>
-                        <ShoeRow shoe={item}></ShoeRow>
-                    }
-                />
-            </View>
+        <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
+            <Text style={{padding:10,fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Wishlist</Text>
+            
+            <FlatList 
+                style={{padding:5}}
+                onRefresh={ () => this.fetchData() }
+                refreshing={ false }
+                data={this.state.wishlist}
+                renderItem={({item}) =>
+                    <ShoeRow shoe={item}></ShoeRow>
+                }
+            />
+
             <NavigationBar navigation={this.props.navigation} screen='Wishlist'/>
         </View>
         )

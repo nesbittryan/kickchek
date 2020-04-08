@@ -22,13 +22,6 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
 
     constructor(props: any) {
         super(props)
-        let i = new Array
-        let s = new Shoe
-        s.brand = "Nike"
-        s.colors = ['red',  'white', 'black']
-        s.model = "Aventadors"
-        i.push(s)
-        storeData(wishlist_key, JSON.stringify(i))
         this.fetchData = this.fetchData.bind(this)
     }
 
@@ -57,8 +50,8 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
                 onRefresh={ () => this.fetchData() }
                 refreshing={ false }
                 data={this.state.wishlist}
-                renderItem={({item}) =>
-                    <ShoeRow shoe={item}></ShoeRow>
+                renderItem={({item, index}) =>
+                    <ShoeRow shoe={item} index={index}></ShoeRow>
                 }
             />
 

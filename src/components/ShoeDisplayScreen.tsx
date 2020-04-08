@@ -20,6 +20,7 @@ export default class ShoeDisplayScreen extends Component<{ navigation: any }> {
             if (data != null) {
                 let l = JSON.parse(data)
                 l.push(nike)
+                console.log(l)
                 storeData(wishlist_key, JSON.stringify(l))
             }
         })

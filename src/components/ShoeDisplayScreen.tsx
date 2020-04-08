@@ -5,8 +5,9 @@ import { Text, Button, Image } from 'react-native-elements';
 import { nike } from '../data/SampleShoeObjects';
 import { Linking } from 'react-native';
 import { Colors } from '../Colors';
-import { wishlist_key, shoes_collected_key } from '../data/StorageKeys';
-import { getData, storeData } from '../AsyncStorage'
+import { wishlist_key, shoes_collected_key, profile_key } from '../data/StorageKeys';
+import { getData, storeData } from '../AsyncStorage';
+import { Share } from 'react-native';
 
 export default class ShoeDisplayScreen extends Component<{navigation: any }> {
 
@@ -16,6 +17,20 @@ export default class ShoeDisplayScreen extends Component<{navigation: any }> {
 
     constructor(props: any) {
         super(props)
+    }
+
+    shareShoe() {
+        let profile_data
+        getData(profile_key).then((data: any) => {
+            if (data != null) {
+                profile_data = JSON.parse(data)
+            }
+        })
+        var share_message = 'Help! If you or someone you know is looking to sell a pair of ' + this.state.shoe.brand + ' ' + this.state.shoe.model + '\'s in size ' + profile_data.shoeSize + ' please let me know! Shoes found via KickChek'
+        Share.share({
+            message: share_message,
+            title:  'Looking for Shoes'
+        })
     }
 
     addToWishlist() {
@@ -57,7 +72,9 @@ export default class ShoeDisplayScreen extends Component<{navigation: any }> {
             <Button containerStyle={{margin:5}} raised
                 title="Add to wishlist"
                 onPress={() => this.addToWishlist() }/>
-
+            <Button containerStyle={{margin:5}} raised type="outline"
+                title="Share"
+                onPress={() => this.shareShoe()}/>
             <NavigationBar navigation={this.props.navigation} screen='Home'/>
         </View>
         )

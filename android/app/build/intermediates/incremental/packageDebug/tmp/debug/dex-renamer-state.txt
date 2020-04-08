@@ -1,4 +1,10 @@
-#Sun Apr 05 12:44:47 EDT 2020
-base.0=/Users/nesbittr/Desktop/mobile/kickchek/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Tue Apr 07 23:06:57 EDT 2020
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=/Volumes/MacintoshHD/Other Documents/School/Fourth Year/CIS4030/kickchek/android/app/build/intermediates/transforms/dexMerger/debug/0
+base.1=/Volumes/MacintoshHD/Other Documents/School/Fourth Year/CIS4030/kickchek/android/app/build/intermediates/transforms/dexMerger/debug/0
+base.0=/Volumes/MacintoshHD/Other Documents/School/Fourth Year/CIS4030/kickchek/android/app/build/intermediates/transforms/dexMerger/debug/0

@@ -15,6 +15,7 @@ const theme =  {
     secondary: Colors.accent_fg,
   }
 }
+import ShoeDisplayScreen from './components/ShoeDisplayScreen';
 
 export default class App extends React.Component {
 
@@ -49,6 +50,9 @@ const AppNavigator = createSwitchNavigator({
     },
     Wishlist: {
       screen: WishlistScreen
+    },
+    ShoeFound: {
+      screen: ShoeDisplayScreen
     }
 });
   

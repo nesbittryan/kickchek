@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nesbittr/Desktop/mobile/kickchek/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "/Volumes/MacintoshHD/Other Documents/School/Fourth Year/CIS4030/kickchek/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bc04a7c4dcf00708ec40af0ed827d567/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/Users/buth/.gradle/caches/transforms-2/files-2.1/f19e92c8f33fcaac58a6abfbfa212dbd/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

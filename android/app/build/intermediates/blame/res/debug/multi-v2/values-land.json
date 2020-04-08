@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nesbittr/Desktop/mobile/kickchek/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Volumes/MacintoshHD/Other Documents/School/Fourth Year/CIS4030/kickchek/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/bc04a7c4dcf00708ec40af0ed827d567/res/values-land/values-land.xml",
+                    "source": "/Users/buth/.gradle/caches/transforms-2/files-2.1/f19e92c8f33fcaac58a6abfbfa212dbd/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nesbittr/.gradle/caches/transforms-2/files-2.1/3af98bc5f2fded68790d22c36208cd4e/res/values-land/values-land.xml",
+                    "source": "/Users/buth/.gradle/caches/transforms-2/files-2.1/b06f3d04aa88cd360fca05407e98fc63/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

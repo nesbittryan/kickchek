@@ -3,4 +3,5 @@ export default class Shoe {
     colors: string[]
     id: string
     model: string
+    url: string
 }

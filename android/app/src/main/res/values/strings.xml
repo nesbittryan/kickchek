@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kickchek</string>
+    <string name="facebook_app_id">com.kickchek</string>
 </resources>

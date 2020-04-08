@@ -1,37 +1,54 @@
 import React, { Component } from 'react';
-import { View, Image } from 'react-native';
+import { View } from 'react-native';
 import NavigationBar from './NavigationBar';
-import { Text, Icon } from 'react-native-elements';
-import { shoe_1, shoe_2 } from '../data/SampleShoeObjects';
+import { Text, Button, Image } from 'react-native-elements';
+import { nike } from '../data/SampleShoeObjects';
 import { Linking } from 'react-native';
-import { Button } from 'react-native-elements';
-
-interface State {
-    photo: string
-}
+import { Colors } from '../Colors';
+import { wishlist_key, shoes_collected_key } from '../data/StorageKeys';
+import { getData, storeData } from '../AsyncStorage'
 
 export default class ShoeDisplayScreen extends Component<{ navigation: any }> {
 
     constructor(props: any) {
         super(props)
     }
+
+    addToWishlist() {
+        getData(wishlist_key)
+        .then((data: any) => {
+            if (data != null) {
+                let l = JSON.parse(data)
+                l.push(nike)
+                storeData(wishlist_key, JSON.stringify(l))
+            }
+        })
+        
+        getData(shoes_collected_key)
+        .then((data: any) => {
+            if (data != null) {
+                let d = JSON.parse(data)
+                storeData(shoes_collected_key, JSON.stringify(d+1))
+            }
+        })
+    }
     
     render() {
         return (
-        <View style={{ justifyContent:'flex-start', height:'100%' }}>
-            <Text style={{fontSize:20, alignSelf:'center'}}>We found your shoe!</Text>
-            <Text style={{fontSize:20, alignSelf:'center'}}>Brand: { shoe_1.brand }</Text>
-            <Text style={{fontSize:20, alignSelf:'center'}}>Model: { shoe_1.model }</Text>
-            <Text style={{fontSize:20, alignSelf:'center', color: 'blue'}}
-                onPress={() => Linking.openURL(shoe_1.url)}>
-            Buy
-            </Text>
+        <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
+            <Text style={{ padding:10, fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Your Shoe</Text>
             
-            {/* <Button
-                    containerStyle={{ width:'40%'}}
-                    title="Add to wishlist"
-                    onPress={() => }/> */}
-            <Image source={shoe_1.image} resizeMode="contain" style={{alignSelf: 'stretch', flex:1, height: undefined, width: undefined}} />
+            <Text style={{fontSize:20, alignSelf:'center'}}>We found your shoe!</Text>
+            <Text style={{fontSize:20, alignSelf:'center'}}>Brand: { nike.brand }</Text>
+            <Text style={{fontSize:20, alignSelf:'center'}}>Model: { nike.model }</Text>
+            <Image source={{uri:nike.image}} containerStyle={{height:'40%'}}/>
+            <Button containerStyle={{margin:5}} raised type="outline"
+                title="Buy Online"
+                onPress={() => Linking.openURL(nike.url)}/>
+            <Button containerStyle={{margin:5}} raised
+                title="Add to wishlist"
+                onPress={() => this.addToWishlist() }/>
+
             <NavigationBar navigation={this.props.navigation} screen='Home'/>
         </View>
         )

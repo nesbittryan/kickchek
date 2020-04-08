@@ -31,15 +31,10 @@ export default class EditPhotoScreen extends Component<{ navigation: any }> {
             
             <Image source={{ uri: `data:image/jpeg;base64,${this.props.navigation.state.params.photo}` }} style={{width:'100%', height:'87%', alignSelf:'center'}}></Image>
 
-<<<<<<< Updated upstream
             <Icon name='forward' color={Colors.primary_bg} reverse reverseColor='#76E76B' raised containerStyle={{ position:'absolute', bottom:70, right:10}}
-                onPress={() => this.identifyShoes()}></Icon>
-=======
-            <Icon name='forward' color='#76E76B' raised containerStyle={{ position:'absolute', bottom:70, right:10}}
                 onPress={() => this.props.navigation.navigate("ShoeFound")}></Icon>
->>>>>>> Stashed changes
             
-            <Icon name='close'  color={Colors.primary_bg} reverse reverseColor='#AD3939' raised containerStyle={{ position:'absolute', bottom:70, left:10}}
+            <Icon name='close' color={Colors.primary_bg} reverse reverseColor='#AD3939' raised containerStyle={{ position:'absolute', bottom:70, left:10}}
                 onPress={() => this.props.navigation.navigate("Camera")}></Icon>
 
             <NavigationBar navigation={this.props.navigation} screen='Home'/>

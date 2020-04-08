@@ -8,7 +8,11 @@ import { Colors } from '../Colors';
 import { wishlist_key, shoes_collected_key } from '../data/StorageKeys';
 import { getData, storeData } from '../AsyncStorage'
 
-export default class ShoeDisplayScreen extends Component<{ navigation: any }> {
+export default class ShoeDisplayScreen extends Component<{navigation: any }> {
+
+    readonly state = {
+        shoe: this.props.navigation.state.params.shoe
+    }
 
     constructor(props: any) {
         super(props)
@@ -19,8 +23,11 @@ export default class ShoeDisplayScreen extends Component<{ navigation: any }> {
         .then((data: any) => {
             if (data != null) {
                 let l = JSON.parse(data)
-                l.push(nike)
-                console.log(l)
+                l.push(this.state.shoe)
+                storeData(wishlist_key, JSON.stringify(l))
+            } else {    
+                let l = new Array
+                l.push(this.state.shoe)
                 storeData(wishlist_key, JSON.stringify(l))
             }
         })
@@ -35,17 +42,18 @@ export default class ShoeDisplayScreen extends Component<{ navigation: any }> {
     }
     
     render() {
+
         return (
         <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
             <Text style={{ padding:10, fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Your Shoe</Text>
             
             <Text style={{fontSize:20, alignSelf:'center'}}>We found your shoe!</Text>
-            <Text style={{fontSize:20, alignSelf:'center'}}>Brand: { nike.brand }</Text>
-            <Text style={{fontSize:20, alignSelf:'center'}}>Model: { nike.model }</Text>
-            <Image source={{uri:nike.image}} containerStyle={{height:'40%'}}/>
+            <Text style={{fontSize:20, alignSelf:'center'}}>Brand: { this.state.shoe.brand }</Text>
+            <Text style={{fontSize:20, alignSelf:'center'}}>Model: { this.state.shoe.model }</Text>
+            <Image source={{uri:this.state.shoe.image}} containerStyle={{height:'40%'}}/>
             <Button containerStyle={{margin:5}} raised type="outline"
                 title="Buy Online"
-                onPress={() => Linking.openURL(nike.url)}/>
+                onPress={() => Linking.openURL(this.state.shoe.url)}/>
             <Button containerStyle={{margin:5}} raised
                 title="Add to wishlist"
                 onPress={() => this.addToWishlist() }/>

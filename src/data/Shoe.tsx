@@ -4,4 +4,5 @@ export default class Shoe {
     id: string
     model: string
     url: string
+    image: any
 }

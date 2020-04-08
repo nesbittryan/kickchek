@@ -20,6 +20,9 @@ import ShoeDisplayScreen from './components/ShoeDisplayScreen';
 export default class App extends React.Component {
 
   render() {
+
+    console.disableYellowBox = true;
+    
     return(
       <ThemeProvider theme={theme}>
         <AppContainer></AppContainer>

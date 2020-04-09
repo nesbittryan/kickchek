@@ -1,3 +1,11 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import NavigationBar from './NavigationBar';
@@ -5,11 +13,16 @@ import { Text, Icon } from 'react-native-elements';
 import { Colors } from '../Colors';
 import { nike, ua } from '../data/SampleShoeObjects';
 
+/* note: although this class in named "EditPhotoScreen", it serves the purpose of confirming the 
+captured image with the user, rather than actually editing the image itself */
+
 interface State {
     photo: string
 }
 
 export default class EditPhotoScreen extends Component<{ navigation: any }> {
+    
+    //set state to include the photo taken from the home screen
     readonly state: State = {
         photo: this.props.navigation.state.params.photo
     }
@@ -19,11 +32,15 @@ export default class EditPhotoScreen extends Component<{ navigation: any }> {
         this.identifyShoes = this.identifyShoes.bind(this)
     }
 
+    /*this is the function that would implement the tensorflow model to select the shoe based on the base64
+    image captured. Since the tensorflow sdk for react-native is only weeks old, there is very little 
+    documentation. This meant an error while loading the model turned fatal due to lack of available solutions*/
     identifyShoes() {
-        // Add tensorflow here, hardcoding shoe for now
+        // insert tensorflow code here
         this.props.navigation.navigate("ShoeFound", {shoe: nike})
     }
     
+    //render the components to the screen
     render() {
         return (
             <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>

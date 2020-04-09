@@ -1,10 +1,19 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Text, Icon } from 'react-native-elements';
 import { Colors } from '../../Colors';
 
 export default class BadgeComponent extends Component<{ collected: boolean, desc:string, name: string }> {
-
+    
+    //render the components to the screen
     render() {
         let color = (this.props.collected) ? Colors.accent_fg : Colors.primary_fg
         return (

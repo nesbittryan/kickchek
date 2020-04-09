@@ -1,3 +1,11 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Icon } from 'react-native-elements';
@@ -6,6 +14,8 @@ import NavigationBar from './NavigationBar';
 import { Colors } from '../Colors';
 
 export default class Homescreen extends Component<{ navigation: any }> {
+    
+    //render the components to the screen
     render() {
         return (
         <View style={{ justifyContent:'center', height:'100%', alignItems:'center' }}>
@@ -18,6 +28,8 @@ export default class Homescreen extends Component<{ navigation: any }> {
         )
     }
 
+    /* when the capture button is clicked, save the image to async storage and navigate to the edit screen,
+    passing along the photo */
     takePicture = async() => {
         if (this.camera) {
           const options = { quality: 0.5, base64: true, doNotSave: true};

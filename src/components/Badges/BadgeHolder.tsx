@@ -1,3 +1,11 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
@@ -7,6 +15,7 @@ import { Colors } from '../../Colors';
 
 export default class BadgeHolder extends Component<{ numShoes: number }> {
 
+    //render the components to the screen
     render() {
         return (
             <View style={{ alignSelf:'stretch', alignItems:'stretch', margin:5}}>

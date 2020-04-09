@@ -1,3 +1,11 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View, FlatList, Share } from 'react-native';
 import { Button, Text } from 'react-native-elements';
@@ -16,6 +24,8 @@ interface State {
 
 export default class WishlistScreen extends Component<{ navigation: any }> {
  
+    /* set state to include user's number of shoes and wishlist to be updated later in 
+    fetchData() as well as a variable to ensure flatlist updates */
     readonly state: State = {
         numShoes: 0,
         wishlist: new Array(),
@@ -32,8 +42,13 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
         this.fetchData();
     }
 
+    /* this function is called by an individual shoeRow component once it has been removed from the list
+    to update the data and refresh the flatlist component. This function is passed as a prop to the 
+    shoeRow class to allow it to manipulate the state of this class */
     refreshList() {
+        //flip the 'refreshing' state variable to change state and trigger update of flatlist component
         this.setState ({ refreshing: !this.state.refreshing })
+        //access user's wishlist from async storage and use data to update state if not null
         getData(wishlist_key)
         .then((data: any) => {
             if (data != null) {
@@ -56,6 +71,7 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
         })
     }
 
+    //render the components to the screen
     render() {
         return (
         <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
@@ -63,8 +79,6 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
             
             <FlatList 
                 style={{padding:5}}
-                // onRefresh={ () => this.fetchData() }
-                // refreshing={ false }
                 data={this.state.wishlist}
                 extraData={this.state}
                 renderItem={({item, index}) =>

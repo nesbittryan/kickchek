@@ -1,3 +1,11 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View, Linking, Share } from 'react-native';
 import { Button, Text, Image } from 'react-native-elements';
@@ -8,6 +16,7 @@ import { getData, storeData } from '../AsyncStorage';
 
 export default class ShoeRow extends Component<{ shoe: Shoe, index:number,  refreshList: any}> {
 
+    //set state to inclide user's shoe size, to be updated later by shareShoe()
     readonly state = {
         shoeSize: "unknown",
     }
@@ -17,10 +26,15 @@ export default class ShoeRow extends Component<{ shoe: Shoe, index:number,  refr
         this.removeShoe = this.removeShoe.bind(this)
     }
 
+    //when the remove button is clicked, remove that item from the wishlist
     removeShoe() {
+        //access the user's wishlist data
         getData(wishlist_key)
         .then((data: any) => {
             if (data != null) {
+                /* if the user's wishlist is not empty, remove the item at current index, save then
+                updated wishlist to async storage and refresh the flatlist displayed in the 
+                WishlistScreen using the refreshList() function passed down as a prop */
                 let l = JSON.parse(data)
                 l.splice(this.props.index,1)
                 storeData(wishlist_key, JSON.stringify(l))
@@ -30,13 +44,17 @@ export default class ShoeRow extends Component<{ shoe: Shoe, index:number,  refr
         })
     }
 
+    //use built-in share functionality to share message
     shareShoe() {
         let profile_data
+        //access shoe size from the user's profile
         getData(profile_key).then((data: any) => {
             if (data != null) {
                 profile_data = JSON.parse(data)
                 this.setState({shoeSize: profile_data.shoeSize})
+                //if profile data is not null, create a message including the shoe model and brand as well as size.
                 let share_message = 'Help! If you or someone you know is looking to sell a pair of ' + this.props.shoe.brand + ' ' + this.props.shoe.model + '\'s in size ' + this.state.shoeSize + ' please let me know! Shoes found via KickChek'
+            //share the message
             Share.share({
                 message: share_message,
                 title:  'Looking for Shoes'
@@ -45,6 +63,7 @@ export default class ShoeRow extends Component<{ shoe: Shoe, index:number,  refr
         })        
     }
 
+    //render the components to the screen
     render() {
         let fontColor = (this.props.index % 2 == 0) ? "#000" : "#FFF";
         let bgColor = (this.props.index % 2 == 0) ? Colors.accent_bg : Colors.font_bg;

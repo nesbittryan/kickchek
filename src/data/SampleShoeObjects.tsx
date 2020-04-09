@@ -1,3 +1,13 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
+//Some preset shoes used to mimic the image recognition system
+
 import Shoe from '../data/Shoe';
 import { ImageStore } from 'react-native';
 

@@ -1,3 +1,11 @@
+/*
+Group Number: 8
+Group Name: KickChek
+Course: CIS4030
+Assignment: Final Project
+Date: April 7, 2020
+*/
+
 import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import { Button, Text, Input, Icon } from 'react-native-elements';
@@ -17,6 +25,7 @@ interface State {
 
 export default class ProfileScreen extends Component<{ navigation: any }> {
     
+    //set state to include empty values for user's profile information, to be set later in fetchData()
     readonly state: State = {
         address: '',
         name: '',
@@ -35,6 +44,7 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
     }
 
     fetchData() {
+        //access the user's profile and populate the state with name, address and shoe size if they are not null
         getData(profile_key)
         .then((data: any) => {
             if (data != null) {
@@ -43,6 +53,7 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
             }
         })
 
+        //access the user's shoe collection and populate the state number of shoes if it is not null
         getData(shoes_collected_key)
         .then((data: any) => {
             if (data != null) {
@@ -52,6 +63,7 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
         })
     }
 
+    //when the user enters their profile information and presses the save button, save info to async storage
     saveProfile() {
         let prof = new ProfileData()
         prof.address = this.state.address
@@ -61,7 +73,8 @@ export default class ProfileScreen extends Component<{ navigation: any }> {
         storeData(profile_key, JSON.stringify(prof))
         this.fetchData()
     }
-    
+
+    //render the components to the screen
     render() {
         return (
             <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>

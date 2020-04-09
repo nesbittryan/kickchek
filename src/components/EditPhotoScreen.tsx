@@ -27,7 +27,7 @@ export default class EditPhotoScreen extends Component<{ navigation: any }> {
     render() {
         return (
             <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
-            <Text style={{ padding:10, fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Your Masterpiece</Text>
+            <Text style={{ padding:10, fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Your Shoe Image</Text>
             
             <Image source={{ uri: `data:image/jpeg;base64,${this.props.navigation.state.params.photo}` }} style={{width:'100%', height:'87%', alignSelf:'center'}}></Image>
 

@@ -12,7 +12,8 @@ import { Share } from 'react-native';
 export default class ShoeDisplayScreen extends Component<{navigation: any }> {
 
     readonly state = {
-        shoe: this.props.navigation.state.params.shoe
+        shoe: this.props.navigation.state.params.shoe,
+        shoeSize: "unknown"
     }
 
     constructor(props: any) {
@@ -24,13 +25,14 @@ export default class ShoeDisplayScreen extends Component<{navigation: any }> {
         getData(profile_key).then((data: any) => {
             if (data != null) {
                 profile_data = JSON.parse(data)
+                this.setState({shoeSize: profile_data.shoeSize})
+                let share_message = 'Help! If you or someone you know is looking to sell a pair of ' + this.state.shoe.brand + ' ' + this.state.shoe.model + '\'s in size ' + this.state.shoeSize + ' please let me know! Shoes found via KickChek'
+            Share.share({
+                message: share_message,
+                title:  'Looking for Shoes'
+            })
             }
-        })
-        var share_message = 'Help! If you or someone you know is looking to sell a pair of ' + this.state.shoe.brand + ' ' + this.state.shoe.model + '\'s in size ' + profile_data.shoeSize + ' please let me know! Shoes found via KickChek'
-        Share.share({
-            message: share_message,
-            title:  'Looking for Shoes'
-        })
+        })        
     }
 
     addToWishlist() {
@@ -60,11 +62,12 @@ export default class ShoeDisplayScreen extends Component<{navigation: any }> {
 
         return (
         <View style={{ justifyContent:'flex-start', height:'100%', alignItems:'stretch', backgroundColor:Colors.primary_bg }}>
-            <Text style={{ padding:10, fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Your Shoe</Text>
+            <Text style={{ padding:10, fontSize:30, alignSelf:'center', color:Colors.font_bg}}>Match Found</Text>
             
-            <Text style={{fontSize:20, alignSelf:'center'}}>We found your shoe!</Text>
-            <Text style={{fontSize:20, alignSelf:'center'}}>Brand: { this.state.shoe.brand }</Text>
-            <Text style={{fontSize:20, alignSelf:'center'}}>Model: { this.state.shoe.model }</Text>
+            <Text style={{color:Colors.white, fontSize:20, alignSelf:'center'}}>We found your shoe!</Text>
+            <Text style={{color:Colors.white, fontSize:20, alignSelf:'center'}}>Match Confidence: 89%</Text>
+            <Text style={{color:Colors.white, fontSize:20, alignSelf:'center'}}>Brand: { this.state.shoe.brand }</Text>
+            <Text style={{color:Colors.white, fontSize:20, alignSelf:'center'}}>Model: { this.state.shoe.model }{"\n"}</Text>
             <Image source={{uri:this.state.shoe.image}} containerStyle={{height:'40%'}}/>
             <Button containerStyle={{margin:5}} raised type="outline"
                 title="Buy Online"

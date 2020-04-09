@@ -1,32 +1,48 @@
 import React, { Component } from 'react';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, Share } from 'react-native';
 import { Button, Text } from 'react-native-elements';
 import { getData, storeData } from '../AsyncStorage'
 import Shoe from '../data/Shoe';
 import NavigationBar from './NavigationBar';
 import ShoeRow from './ShoeRow';
-import { wishlist_key, shoes_collected_key } from '../data/StorageKeys';
+import { wishlist_key, shoes_collected_key, profile_key } from '../data/StorageKeys';
 import { Colors } from '../Colors';
 
 interface State {
     numShoes: number
     wishlist: Shoe[]
+    refreshing: any
 }
 
 export default class WishlistScreen extends Component<{ navigation: any }> {
  
     readonly state: State = {
         numShoes: 0,
-        wishlist: new Array()
+        wishlist: new Array(),
+        refreshing: false
     }
 
     constructor(props: any) {
         super(props)
         this.fetchData = this.fetchData.bind(this)
+        this.refreshList = this.refreshList.bind(this)
     }
 
     componentDidMount() {
         this.fetchData();
+    }
+
+    refreshList() {
+        this.setState ({ refreshing: !this.state.refreshing })
+        getData(wishlist_key)
+        .then((data: any) => {
+            if (data != null) {
+                let l = JSON.parse(data)
+                this.setState({ wishlist: l, numShoes: l.length})
+                storeData(shoes_collected_key, JSON.stringify(l.length))
+            }
+        })
+        console.log("refreshed from wishlist")
     }
 
     fetchData() {
@@ -47,11 +63,12 @@ export default class WishlistScreen extends Component<{ navigation: any }> {
             
             <FlatList 
                 style={{padding:5}}
-                onRefresh={ () => this.fetchData() }
-                refreshing={ false }
+                // onRefresh={ () => this.fetchData() }
+                // refreshing={ false }
                 data={this.state.wishlist}
+                extraData={this.state}
                 renderItem={({item, index}) =>
-                    <ShoeRow shoe={item} index={index}></ShoeRow>
+                    <ShoeRow shoe={item} index={index} refreshList={this.refreshList}></ShoeRow>
                 }
             />
 

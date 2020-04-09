@@ -1,8 +1,9 @@
 import Shoe from '../data/Shoe';
+import { ImageStore } from 'react-native';
 
-export const nike: Shoe = {   brand: "Nike", colors: ["Black", "Grey", "White"], id: "1", 
-    model: "Metcon 4", url: "https://www.amazon.com/dp/B072FNHXK6/ref=twister_B005UWIY92",
-    image: "https://img.gs/kjrgscdmbm/1160/https://www.garagegymreviews.com/articles/images/Nike-Metcon-4-Review-1.jpg"}
+export const nike: Shoe = {   brand: "Nike", colors: ["White"], id: "1", 
+    model: "Air Force 1", url: "https://www.footlocker.ca/en/product/nike-air-force-1-low-mens/04103873.html",
+    image: "https://images.footlocker.com/is/image/EBFL2/04103873_a1?wid=640&hei=640&fmt=png-alpha"}
 
 
 export const ua: Shoe = {   brand: "Under Armor", colors: ["Navy Blue"], id: "2", 
